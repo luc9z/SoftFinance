@@ -1,0 +1,121 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.monthName {
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 78px;
+  width: 100%;
+}
+
+.userBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profileCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #19E051;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  margin-right: 20px;
+  overflow: hidden; // Para garantir que a imagem não ultrapasse os limites do círculo
+
+  .profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profileInitial {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.nameWelcome {
+  font-size: 24px;
+  color: black;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.inputBox button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #19E051;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #19E051;
+  }
+}
+
+.yearSelector {
+  margin-bottom: 20px;
+}
+
+.yearSelector label {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.yearSelector select {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.monthContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.monthItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.monthItem button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

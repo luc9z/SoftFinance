@@ -1,0 +1,28 @@
+/* ResultChart.module.scss */
+
+.resultChart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chartTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .chartContainer {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .chartText {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  

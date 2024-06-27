@@ -1,0 +1,43 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .loginBtn, .registerBtn, .dashboardBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginBtn:hover, .registerBtn:hover, .dashboardBtn:hover {
+    background-color: #0056b3;
+  }
+  

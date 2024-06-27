@@ -1,1 +1,2 @@
-# SoftFinance
+# SoftwareFinance
+Sistema Financeiro

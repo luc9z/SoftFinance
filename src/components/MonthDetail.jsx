@@ -119,10 +119,15 @@ const MonthDetail = () => {
     ["Saldo", totalEntries - totalExpenses - totalGoalsMonthlyValue]
   ];
 
+  const categorySums = expenses.reduce((acc, expense) => {
+    acc[expense.category] = (acc[expense.category] || 0) + expense.value;
+    return acc;
+  }, {});
+
   const expensesData = [
     ["Categoria", "Valor"],
-    ...expenses.map(expense => [expense.category, expense.value]),
-    ["Metas", totalGoalsMonthlyValue]
+    ...Object.entries(categorySums).map(([category, value]) => [category, parseFloat(value.toFixed(2))]),
+    ["Metas", parseFloat(totalGoalsMonthlyValue.toFixed(2))]
   ];
 
   const isPastDate = selectedYear < currentYear || (selectedYear === currentYear && selectedMonth < currentMonth);
@@ -154,7 +159,7 @@ const MonthDetail = () => {
                 <tr key={expense.id}>
                   <td>{expense.name}</td>
                   <td>{expense.category}</td>
-                  <td>{expense.value}</td>
+                  <td>{expense.value.toFixed(2)}</td>
                   <td>{expense.installments}</td>
                   <td>
                     <button className={styles.removeButton} onClick={() => handleRemoveExpense(expense.id)}>Remover</button>
@@ -166,7 +171,7 @@ const MonthDetail = () => {
           <div className={styles.charts}>
             <div className={styles.chart}>
               <h3>Entradas - Despesas</h3>
-              <ResultChart data={entriesExpensesData} />
+              <ResultChart data={entriesExpensesData} colors={["#FF0000", "#65B307"]} />
             </div>
             <div className={styles.chart}>
               <h3>Despesas por Categoria</h3>

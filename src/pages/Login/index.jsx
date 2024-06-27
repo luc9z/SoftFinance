@@ -9,7 +9,7 @@ import { storage } from "../../services/firebaseConnection";
 import { ref, uploadBytes } from "firebase/storage";
 import { AuthContext } from "../../contexts/AuthContext";
 import InputMask from 'react-input-mask';
-import logoPng from "../../assets/pics/logo.png";
+import logoPng from "../../assets/pics/logo1.png";
 
 
 export default function Login() {

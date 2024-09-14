@@ -1,21 +1,20 @@
-# CityHall Project
+# Sistema de Gestão Financeira
 
-CityHall Project é uma aplicação web desenvolvida para gerenciar quadras esportivas, pontos de coleta de resíduos recicláveis, e inscrições em campeonatos e torneios. A aplicação utiliza React no frontend e Firebase para autenticação e armazenamento de dados no backend.
+Este projeto é um sistema de gestão financeira desenvolvido em React.js, que permite aos usuários gerenciar suas entradas, despesas e metas financeiras de forma organizada. O sistema possui funcionalidades de autenticação e gráficos interativos para visualização de dados.
 
 ## Funcionalidades
 
-1. **Agendamento de Horários de Quadras**
-   - O usuário pode selecionar uma quadra esportiva, escolher uma data e ver os horários disponíveis para agendamento.
-
-2. **Visualização de Pontos de Coleta de Resíduos Recicláveis**
-   - O usuário pode visualizar pontos de coleta próximos à sua localização, filtrar por bairro e visualizar horários de funcionamento e materiais aceitos.
-
-3. **Inscrição em Campeonatos e Torneios**
-   - O usuário pode se inscrever em torneios ou campeonatos, preenchendo um formulário com os dados da equipe e membros.
+- Registro e autenticação de usuários.
+- Gerenciamento de entradas, despesas e metas financeiras.
+- Visualização de dados financeiros através de gráficos utilizando o Google Charts.
+- Interface responsiva e amigável construída com React.js e SCSS.
 
 ## Tecnologias Utilizadas
 
-- **Frontend**: React.js
-- **Backend**: Firebase (Authentication, Firestore)
-- **Estilização**: CSS, Styled Components
-- **Notificações**: React Toastify
+- **React.js**: Biblioteca JavaScript para construção da interface do usuário.
+- **Firebase Firestore**: Banco de dados NoSQL para armazenamento de dados.
+- **Firebase Authentication**: Gerenciamento de autenticação de usuários.
+- **Google Charts**: Exibição de gráficos financeiros interativos.
+- **SCSS**: Estilização da aplicação.
+- **React Toastify**: Notificações e feedback ao usuário.
+- **React Router**: Gerenciamento de rotas da aplicação.

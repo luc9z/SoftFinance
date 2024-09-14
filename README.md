@@ -12,8 +12,7 @@ Este projeto é um sistema de gestão financeira desenvolvido em React.js, que p
 ## Tecnologias Utilizadas
 
 - **React.js**: Biblioteca JavaScript para construção da interface do usuário.
-- **Firebase Firestore**: Banco de dados NoSQL para armazenamento de dados.
-- **Firebase Authentication**: Gerenciamento de autenticação de usuários.
+- **Firebase**: Banco de dados Firebase, para armazenamento de dados.
 - **Google Charts**: Exibição de gráficos financeiros interativos.
 - **SCSS**: Estilização da aplicação.
 - **React Toastify**: Notificações e feedback ao usuário.
